@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Automation_Project1</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">65.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">Automation_Project1 &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">TestCase</td><td><a href="#m1"><b>RegistrationPage</b>  </a></td><td class="numi">1</td><td>1696595589183</td><td class="numi">608</td></tr><tr class="failedodd"><td><a href="#m2"><b>LoginPageTest</b>  </a></td><td class="numi">1</td><td>1696595625579</td><td class="numi">1880</td></tr><tr class="failedodd"><td><a href="#m3"><b>ADDTOCart</b>  </a></td><td class="numi">1</td><td>1696595638813</td><td class="numi">1460</td></tr>
+</table>
+<h1>Automation_Project1</h1>
+<h2 id="m1">TestCase:LoginPageTest</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=117.0.5938.92): Wrong password.
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_342&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [64be4954c717e4e6e39906674c51d072, findElement {using=xpath, value=//body/div[@id=&apos;contcont&apos;]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]/img[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Abdo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37024}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:37024/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 64be4954c717e4e6e39906674c51d072
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at LogPage.EnterLogPage(LogPage.java:22)
+	at TestCase.LoginPageTest(TestCase.java:63)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">TestCase:ADDTOCart</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=117.0.5938.92): Wrong password.
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_342&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [052e61836b7c21b4b11f5a8287765c3d, findElement {using=xpath, value=//body/div[@id=&apos;contcont&apos;]/div[1]/div[2]/div[1]/div[1]/div[1]/a[1]/img[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 117.0.5938.92, chrome: {chromedriverVersion: 117.0.5938.149 (e3344ddefa1..., userDataDir: C:\Users\Abdo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37078}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:37078/devtoo..., se:cdpVersion: 117.0.5938.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 052e61836b7c21b4b11f5a8287765c3d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at LogPage.EnterLogPage(LogPage.java:22)
+	at TestCase.ADDTOCart(TestCase.java:89)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">TestCase:RegistrationPage</h2>
+<div>
+<div class="stacktrace">java.lang.NullPointerException
+	at TestCase.RegistrationPage(TestCase.java:41)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
